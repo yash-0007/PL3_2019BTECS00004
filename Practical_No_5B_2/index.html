@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Centigrade To Fahrenheit</title>
+  </head>
+  <body>
+    <header>
+      <h1>Program for Celsius To Fahrenheit conversion</h1>
+    </header>
+    <hr />
+
+    <article>
+      <section>
+        <h3>Formula for converting Celsius scale to Fahrenheit scale</h3>
+        <small>T(<sup>o</sup>F) = T(<sup>o</sup>C) × 9/5 + 32</small>
+      </section>
+      <hr />
+
+      <section>
+        <h3>Code</h3>
+        <code>
+          <pre>
+#include <stdio.h>
+int main()
+{
+    float fahrenheit, celsius;
+    printf("Enter temperature in celsius: ");
+    scanf("%f", &celsius);
+    fahrenheit = ((celsius * 9) / 5) + 32;
+    printf("Temperature in fahrenheit is:  %f", fahrenheit);
+    return 0;
+}
+        </pre
+          >
+        </code>
+      </section>
+      <hr />
+
+      <section>
+        <h3>Sample input</h3>
+        <kbd>Enter temperature in celsius: 24</kbd>
+        <h3>Sample output</h3>
+        <samp>Temperature in Fahrenheit is: 75.1999997<samp>
+      </section>
+      <hr />
+
+      <section>
+        <h3>Variable used in the program</h3>
+        <var>fahrenheit</var> <var>celsius</var>
+      </section>
+    </article>
+    <hr />
+
+    <footer>
+      <h4>
+        Learn more about algorithm used
+        <a
+          href="https://www.metric-conversions.org/temperature/celsius-to-fahrenheit.htm"
+          >here</a
+        >!
+      </h4>
+    </footer>
+  </body>
+</html>
