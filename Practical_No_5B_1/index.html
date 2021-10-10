@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Computer Science Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>Scaling front end design with a design system</h1>
+      <h2>
+        If you're building the same UI components over and over, you might need
+        a design system.
+      </h2>
+    </header>
+    <hr />
+
+    <article>
+      <section>
+        <p>
+          Remember <b>Twitter Bootstrap</b>? I used the library to make my
+          applications look visually appealing. Twitter Bootstrap is an
+          open-source library to help speed up application development for
+          front-end engineers. It’s an HTML/CSS/JS front-end framework that made
+          creating consistent UI components easy. Today, many technology
+          companies have developed their own version of Bootstrap which is
+          called a design system. These are collections of reusable components
+          guided by clear design standards to support application development.
+          This allows businesses to differentiate their mobile and web
+          applications from others while maintaining a visual look and feel
+          across products. The evolution from Bootstrap to a design system was
+          natural.
+        </p>
+        <p>
+          Have you ever noticed that two different products from the same
+          company can have two entirely different user experiences? Design
+          inconsistency can often come from two separate design teams not being
+          in sync and building their own set of UIs independently.
+        </p>
+        <p>
+          That’s where a design system can help. The goal of a design system
+          should be to enable developers and designers to create engaging
+          product experiences by providing consistent user experience across all
+          products. Technology companies such as <b>Salesforce</b>,
+          <b>Stack Overflow</b>, and <b>Microsoft</b> publicly share their
+          design system and their design principles.
+        </p>
+        <p>
+          Above all, a design system is just not a library of UI components, but
+          documentation of the standards and guidelines, visual language, and
+          support for accessibility, as well as information on how to get
+          started implementing the system. Of course, this list is not
+          exhaustive, but a complete design system doesn’t stop at building a UI
+          library.
+        </p>
+        <p>
+          Moreover, design systems benefit developers. As an engineer you can
+          focus on solving technical problems or learn new technologies over
+          building redundant user interfaces. If you are a front-end developer,
+          you might be frustrated when asked to build the same UI components
+          several times. With a design system, the component gets built once,
+          and you implement it. Let’s take a look at how a design system can
+          help engineering teams scale.
+        </p>
+      </section>
+
+      <section>
+        <h3>Support from a central team</h3>
+        <p>
+          The heart of any design system is the central team designing and
+          developing UI components. A highly functional design system team
+          follows a well-defined process for designing, building, and
+          documenting components, visual guidelines, engineering guidelines and
+          user experience patterns.
+        </p>
+        <p>
+          For example, when building a system feature—for example, a button
+          component—a design system team should gather requirements by
+          conducting an initial design discovery on items such as variations,
+          sizes, and composability. After this initial discovery, the team
+          should share their findings with the developers who want to use the
+          component to ensure it has all of the features they need to adopt it
+          once it’s released. At this point, building the component is the easy
+          part, but there should be clear documentation on design, code, and
+          accessibility to support this new element. These are the core
+          responsibilities of a design system team.
+        </p>
+        <p>
+          Furthermore, the team is responsible for fixing bugs, supporting the
+          design community, creating training material, and so on. A design
+          system should be treated as a product team whose customers are the
+          internal designers and front-end engineers, focused on building and
+          scaling the system.
+        </p>
+        <p>
+          Lastly, the team is responsible for adoption. If there is no adoption
+          by other teams, building a design system for the sake of building one
+          is a wasted effort. There are many ways to assess the impact of a
+          design system within an organization. For example, a design system
+          team can scan companywide codebases to identify where and how the
+          system is used. This also helps understand which teams are using the
+          latest version of UI components.
+        </p>
+        <p>
+          Another way to assess the adoption rate is to ask product teams to
+          self-report quarterly on their adoption progress. This works depending
+          on the size of an organization. A design system team can also use a
+          combination of surveys with other assessment methods.
+        </p>
+        <p>
+          Often there is a product manager responsible for cultivating
+          partnerships with other stakeholders. They create the development
+          roadmap and bring community needs back to designers and developers.
+        </p>
+      </section>
+
+      <section>
+        <h3>Designed to help developers</h3>
+        <p>
+          Design systems are meant to empower front-end developers with their
+          development workflow. There are many tasks that developers care
+          about—package download, tooling, scoped modules and many more. The
+          good news is that design systems help cover these topics. Let’s take a
+          look at some of the specific cases.
+        </p>
+        <p>
+          If a design system built components, but had no way to distribute it,
+          it would frustrate many developers. Or if packages were being
+          distributed via an outdated package manager, it would make consuming
+          the design system components challenging for developers. A good design
+          system is constantly evolving its distribution tools. Modern package
+          manager tools such as <b>NPM</b> or <b>Yarn</b> are commonly supported
+          across many design systems today.
+        </p>
+        <p>
+          Furthermore, components need to be versioned correctly and release
+          notes need to be updated frequently to reflect major and minor version
+          changes. Many design systems go far by documenting their process
+          around testing to gain confidence from developers on the stability of
+          components.
+        </p>
+        <p>
+          Additionally developers care about style encapsulation and compiling
+          and transpiling of code. Some developers care about scoped CSS class
+          names. Many design systems use <b>CSS Modules</b> to modularize and
+          compose CSS. Design systems leverage CSS Modules to enable custom
+          scoping of class names and prevent name clashing between different
+          versions. CSS Modules allow UI components to coexist on a page with
+          other versions of the library.
+        </p>
+        <p>
+          As such, design systems come with clear documentation for developers
+          on many of these topics under their
+          <em>Getting Started for Engineers</em> section. This helps onboard
+          first-time developers. There are several other engineering issues that
+          design systems can help solve—JavaScript polyfills, support for Vue or
+          React frameworks, distributing library assets using a CDN, SCSS
+          post-processing or overrides, built-in accessibility, and so on. The
+          point is that the design system goes far beyond the visual guidelines.
+          Supporting engineering tasks is a part of what a design system does.
+        </p>
+      </section>
+
+      <section>
+        <h3>Wrapping up</h3>
+        <p>
+          If you find your teams building the same components over and over,
+          then maybe it’s time to systematize your design. With a design system,
+          is an alliance between your engineering and design teams can
+          efficiently build a consistent user experience for the end users that
+          scales easily across multiple products and platforms. This goes beyond
+          building a library, it includes researching, maintaining, and
+          distributing documentation on the standards and guidelines for the
+          organization’s design. It is critical that both designers and
+          developers play their role in order to build an engaging product
+          experience.
+        </p>
+        <p>
+          A design system is not a project or a side project. It is a product
+          serving other products.Without treating it as its own product, it will
+          fail to gain adoption in an organization.<br />
+          A design system is not a style guide, pattern library, or a component
+          library. But all of these together make up the system.
+        </p>
+      </section>
+      <em>Tags: design, design system, front-end</em>
+    </article>
+
+    <aside>
+      <address>
+        <h4>
+          Written by
+          <a href="https://stackoverflow.blog/author/mihir-patel/"
+            >Mihir Patel</a
+          >
+        </h4>
+      </address>
+    </aside>
+    <hr />
+
+    <footer>
+      <h3>Related</h3>
+      <h4>
+        <a
+          href="https://stackoverflow.blog/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/"
+          >Observability is the future (of your DevOps career)</a
+        >
+      </h4>
+      <h4>
+        <a
+          href="https://stackoverflow.blog/2021/07/19/privacy-is-an-afterthought-in-the-software-lifecycle-that-needs-to-change/"
+          >Privacy is an afterthought in the software lifecycle. That needs to
+          change</a
+        >
+      </h4>
+      <h4>
+        <a
+          href="https://stackoverflow.blog/2021/09/03/the-overflow-89-passwords-are-dead/"
+          >Passwords are dead!</a
+        >
+      </h4>
+      <h4>
+        <a
+          href="https://stackoverflow.blog/2021/05/18/podcast-339-where-design-meets-development-at-stack-overflow/"
+          >Where design meets development</a
+        >
+      </h4>
+    </footer>
+  </body>
+</html>
